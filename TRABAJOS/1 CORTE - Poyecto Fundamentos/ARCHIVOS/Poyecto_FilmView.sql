@@ -8,7 +8,7 @@ CREATE TABLE Pelicula(
 	id_pelicula SERIAL PRIMARY KEY,
 	nombre VARCHAR(100) NOT NULL, 
 	genero VARCHAR(100),
-	duracion INT CHECK (duracion > 0)
+	duracion_min INT CHECK (duracion > 0)
 );
 
 CREATE TABLE Boleto(
