@@ -1,0 +1,84 @@
+{
+  "usuarios": [
+    { 
+      "_id": "u1", 
+      "nombre": "Juan Camilo", 
+      "usuario": "Camilo_B", 
+      "correo": "juan@gmail.com" 
+    },
+    { 
+      "_id": "u2", 
+      "nombre": "Maria Gimenez", 
+      "usuario": "Mari_G", 
+      "correo": "mari_gimenez@gmail.com" 
+    }
+  ],
+
+  "publicaciones": [
+    { 
+      "_id": "p1", 
+      "usuarioId": "u1", 
+      "contenido": "Esta es mi primera publicación en RedSocial+", 
+      "fecha": "2025-11-08T10:00:00Z", 
+      "comentarios": [
+        { 
+          "autor": "Maria Gimenez", 
+          "texto": "Excelente publicación, me encantó", 
+          "fecha": "2025-11-08T10:05:00Z" 
+        }
+      ] 
+    },
+    { 
+      "_id": "p2", 
+      "usuarioId": "u2", 
+      "contenido": "Iniciando en MongoDB", 
+      "fecha": "2025-11-08T10:15:00Z", 
+      "comentarios": [] 
+    }
+  ],
+
+  "comentarios": [
+    { 
+      "_id": "c1", 
+      "publicacionId": "p1", 
+      "autorId": "u2", 
+      "texto": "Muy buena publicación", 
+      "fecha": "2025-11-08T10:10:00Z" 
+    },
+    { 
+      "_id": "c2", 
+      "publicacionId": "p2", 
+      "autorId": "u1", 
+      "texto": "Genial!", 
+      "fecha": "2025-11-08T10:20:00Z" 
+    }
+  ],
+
+  "reacciones": [
+    { 
+      "_id": "r1", 
+      "publicacionId": "p1", 
+      "usuarioId": "u2", 
+      "tipo": "like" 
+    },
+    { 
+      "_id": "r2", 
+      "publicacionId": "p2", 
+      "usuarioId": "u1", 
+      "tipo": "love" 
+    }
+  ],
+
+  "seguidores": [
+    { 
+      "_id": "s1", 
+      "seguidorId": "u2", 
+      "seguidoId": "u1" 
+    },
+    { 
+      "_id": "s2", 
+      "seguidorId": "u1", 
+      "seguidoId": "u2" 
+    }
+  ]
+}
